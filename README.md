@@ -10,7 +10,7 @@ Kinesis Data Stream ARNs must be provided, as IAM policies for Data Streams cann
 
 ```hcl
 module "runtime_connector" {
-  source  = "symopsio/runtime-connector/sym"
+  source  = "symopsio/runtime-connector/aws"
   version = ">= 1.0.0"
 
   addons      = ["aws/kinesis-data-stream"]
