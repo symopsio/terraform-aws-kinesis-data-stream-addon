@@ -36,7 +36,7 @@ resource "aws_iam_policy" "this" {
 EOT
 }
 
-resource "aws_iam_role_policy_attachment" "attach_secrets_manager_access" {
+resource "aws_iam_role_policy_attachment" "attach_datastream_access" {
   # If an IAM Role is specified, then attach the policy to that IAM Role.
   count = var.iam_role_name != "" ? 1 : 0
 
