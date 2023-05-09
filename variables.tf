@@ -10,7 +10,7 @@ variable "tags" {
 }
 
 variable "stream_arns" {
-  description = "List of Data Stream ARNs allowed to be published to by the Sym Runtime."
+  description = "List of Data Stream ARNs the Sym Runtime is allowed to publish to."
   type        = list(string)
   default     = []
 }
