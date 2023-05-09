@@ -49,7 +49,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_environment"></a> [environment](#input\_environment) | The unique name of the environment in which you are deploying this AWS IAM Policy (e.g. staging, or prod). | `string` | n/a | yes |
 | <a name="input_iam_role_name"></a> [iam\_role\_name](#input\_iam\_role\_name) | If specified, the generated AWS IAM Policy will be attached to the AWS IAM Role identified by this value. | `string` | `""` | no |
-| <a name="input_stream_arns"></a> [stream\_arns](#input\_stream\_arns) | List of Data Stream ARNs allowed to be published to by the Sym Runtime. | `list(string)` | `[]` | no |
+| <a name="input_stream_arns"></a> [stream\_arns](#input\_stream\_arns) | List of Data Stream ARNs the Sym Runtime is allowed to publish to. | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags to apply to resources. | `map(string)` | `{}` | no |
 
 ## Outputs
